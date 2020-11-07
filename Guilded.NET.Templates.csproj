@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>0.1</PackageVersion>
+    <PackageId>Guilded.NET.Templates</PackageId>
+    <Title>Guilded.NET Templates</Title>
+    <Authors>IdkGoodName</Authors>
+    <Description>Templates for Guilded.NET user and bot clients</Description>
+    <PackageTags>dotnet-new;templates;guilded.net;guilded;api;wrapper</PackageTags>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates/**/*" Exclude="templates/**/bin/**;templates/**/obj/**" />
+    <Compile Remove="**/*" />
+  </ItemGroup>
+</Project>
